@@ -1,5 +1,7 @@
 package com.jojoldu.webservice.domain.posts;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,11 +28,17 @@ public class Posts {
     private String content;
 
     private String author;
+    
+    private LocalDateTime createDate;
+    
+    private LocalDateTime modifiedDate;
 
     @Builder
     public Posts(String title, String content, String author) {
         this.title = title;
         this.content = content;
         this.author = author;
+        this.createDate = createDate;
+        this.modifiedDate = modifiedDate;
     }
 }

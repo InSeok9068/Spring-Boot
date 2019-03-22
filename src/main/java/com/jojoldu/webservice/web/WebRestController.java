@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.jojoldu.webservice.domain.posts.PostsRepository;
 import com.jojoldu.webservice.domain.posts.PostsSaveRequestDto;
+import com.jojoldu.webservice.service.PostsService;
 
 import lombok.AllArgsConstructor;
 
@@ -15,14 +16,21 @@ import lombok.AllArgsConstructor;
 public class WebRestController {
 
     private PostsRepository postsRepository;
+    
+    private PostsService postsService;
 
     @GetMapping("/hello")
     public String hello() {
         return "HelloWorld";
     }
 
+//    @PostMapping("/posts")
+//    public void savePosts(@RequestBody PostsSaveRequestDto dto){
+//        postsRepository.save(dto.toEntity());
+//    }
+    
     @PostMapping("/posts")
-    public void savePosts(@RequestBody PostsSaveRequestDto dto){
-        postsRepository.save(dto.toEntity());
+    public Long savePosts(@RequestBody PostsSaveRequestDto dto){
+        return postsService.save(dto);
     }
 }
