@@ -1,8 +1,10 @@
-package com.jojoldu.webservice.domain.posts;
+package com.jojoldu.webservice.dto.posts;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Optional;
+
+import com.jojoldu.webservice.domain.posts.Posts;
 
 import lombok.Getter;
 

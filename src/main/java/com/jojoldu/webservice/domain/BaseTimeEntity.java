@@ -1,4 +1,4 @@
-package com.jojoldu.webservice.domain.posts;
+package com.jojoldu.webservice.domain;
 
 import java.time.LocalDateTime;
 

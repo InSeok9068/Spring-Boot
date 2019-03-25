@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.jojoldu.webservice.domain.posts.Posts;
 import com.jojoldu.webservice.domain.posts.PostsRepository;
-import com.jojoldu.webservice.domain.posts.PostsSaveRequestDto;
+import com.jojoldu.webservice.dto.posts.PostsSaveRequestDto;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

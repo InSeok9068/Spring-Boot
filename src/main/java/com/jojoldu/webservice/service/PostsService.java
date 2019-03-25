@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.jojoldu.webservice.domain.posts.PostsMainResponseDto;
 import com.jojoldu.webservice.domain.posts.PostsRepository;
-import com.jojoldu.webservice.domain.posts.PostsSaveRequestDto;
+import com.jojoldu.webservice.dto.posts.PostsMainResponseDto;
+import com.jojoldu.webservice.dto.posts.PostsSaveRequestDto;
 
 import lombok.AllArgsConstructor;
 
